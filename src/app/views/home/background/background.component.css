@@ -1,0 +1,10 @@
+#fundo {
+  overflow: hidden; 
+  background-image: url("src/assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  z-index: 5;
+  position: relative;
+}

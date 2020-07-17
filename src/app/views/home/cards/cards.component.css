@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+.cardcontainer {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 1150px) {
+  .cardcontainer {
+    max-width: 1150px;
+  }
+}
+
+.grid {
+  display: grid;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .grid,
+  .item,
+  .example-card {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .cardcontainer {
+    margin-top: -500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid,
+  .item,
+  .example-card {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .cardcontainer {
+    margin-top: -500px;
+  }
+}
+
+.grid-template-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: -25vh;
+}
+
+.item {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+body {
+  font-family: roboto;
+  color: #333;
+  margin: 0px;
+  padding-bottom: 60px;
+}
+
+body > div {
+  padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/*CARD CONTAINER*/
+
+/* CARTÕES */
+
+.mat-card {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: content-box;
+
+}
+
+.mat-card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.mat-card-title {
+  text-align: center;
+}
+
+.example-card {
+  max-width: max-content;
+  text-align: center;
+}
+
+#btfundo1 {
+  color: #f11516;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#btfundo2 {
+  color: #878787;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#btfundo3 {
+  color: #878787;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#btfundo4 {
+  color: #35db93;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#title1 {
+  color: #f11516;
+  font-weight: bold;
+}
+
+#title2 {
+  color: #1767e5;
+  font-weight: bold;
+}
+
+#title3 {
+  color: #6b41e9;
+  font-weight: bold;
+}
+
+#title4 {
+  color: #35db93;
+  font-weight: bold;
+}
+
+

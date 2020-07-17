@@ -1,0 +1,80 @@
+#fundo2 {
+  margin-top: -25vh;
+  width: 100%;
+  height: 400px;
+  background: var(--unnamed-color-1767e5) 0% 0% no-repeat padding-box;
+  background: #1767e5 0% 0% no-repeat padding-box;
+  opacity: 0.1;
+  display: flex;
+}
+
+.card_subs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vh;
+}
+
+#cardSubscribe {
+  width: 618px;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  #cardSubscribe {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cardSubscribe {
+    width: 70%;
+  }
+}
+
+.mat-card {
+  background: transparent linear-gradient(89deg, #397ae1 0%, #addbef 100%) 0% 0 no-repeat padding-box;
+  box-shadow: 0px 4px 8px #1767e526;
+  border-radius: 15px;
+  opacity: 1;
+  color: white;
+}
+
+a {
+  font: Medium var(--unnamed-font-size-14) / 20p var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-1767e5);
+  font: Medium 14px/20px Roboto;
+  letter-spacing: 0px;
+  color: #1767e5;
+  opacity: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+h3 {
+  font: Bold var(--unnamed-font-size-32) / var(--unnamed-line-spacing-23) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: Bold 28px/23px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+p {
+  font: Regular var(--unnamed-font-size-14) / var(--unnamed-line-spacing-17) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: Regular 14px/17px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
