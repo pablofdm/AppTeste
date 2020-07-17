@@ -18,8 +18,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { CardsService } from './cards.service';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularFontAwesomeModule } from 'angular-font-awesome'
-
 
 @NgModule({
   declarations: [
@@ -43,7 +41,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome'
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
-    AngularFontAwesomeModule
   ],
   providers: [CardsService],
   bootstrap: [AppComponent]
