@@ -64,6 +64,10 @@ label {
   margin-left: 15px;
 }
 
+img{
+  color:#FFFFFF;
+}
+
 @media screen and (max-width: 600px) {
   .grid {
     display: block;

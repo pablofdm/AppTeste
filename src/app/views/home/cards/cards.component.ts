@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardsService } from 'src/app/cards.service';
 
+
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -8,16 +9,19 @@ import { CardsService } from 'src/app/cards.service';
 })
 export class CardsComponent implements OnInit {
   
-  cards: Array<any>;
+  cards: Array<any> ;
 
-  constructor(private cardsService: CardsService) { }
+  constructor(private CardService: CardsService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.listar();
   }
 
   listar() {
-    this.cardsService.listar().subscribe(dados => this.cards = dados);
+    this.CardService.listar().subscribe(dados => this.cards = dados)
   }
-
 }
+
+    
+
+
