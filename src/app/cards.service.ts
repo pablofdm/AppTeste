@@ -2,6 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+interface Card {
+  title: string;
+  text: string;
+  color: string;
+}
+
+interface Products {
+  products: Array<Card>
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +23,6 @@ export class CardsService {
   constructor(private http: HttpClient) { }
 
   listar(){
-    return this.http.get<any[]>(`${this.API}`)
+    return this.http.get<Products>(`${this.API}`)
   }
 }
