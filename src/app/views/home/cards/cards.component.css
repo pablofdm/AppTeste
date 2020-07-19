@@ -1,14 +1,24 @@
 * {
   box-sizing: border-box;
 }
-.cardcontainer {
-  z-index: 5;
+
+.containers{
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cardcontainer {
+  display: flex;
+  z-index: 5;
+  position: absolute;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  align-items: center;
 }
+
 
 @media (min-width: 1150px) {
   .cardcontainer {
@@ -27,12 +37,9 @@
   .example-card {
     display: block;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
-  .cardcontainer {
-    margin-top: -500px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -43,14 +50,13 @@
     box-sizing: border-box;
     margin-bottom: 20px;
   }
-  .cardcontainer {
-    margin-top: -500px;
-  }
+  
 }
 
 .grid-template-columns-4 {
   grid-template-columns: repeat(4, 1fr);
-  margin-top: -25vh;
+  margin-top: -40vh;
+  justify-content: space-evenly;
 }
 
 .item {
@@ -73,6 +79,10 @@ body > div:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.03);
 }
 
+p{
+  font-size: 0.8em;
+}
+
 /*CARD CONTAINER*/
 
 /* CARTÕES */
@@ -81,8 +91,8 @@ body > div:nth-of-type(even) {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-  box-sizing: content-box;
-
+  box-sizing: border-box;
+  line-height: normal;
 }
 
 .mat-card:hover {

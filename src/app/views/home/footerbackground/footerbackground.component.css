@@ -1,20 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+
 #fundo2 {
-  margin-top: -25vh;
   width: 100%;
-  height: 400px;
-  background: var(--unnamed-color-1767e5) 0% 0% no-repeat padding-box;
-  background: #1767e5 0% 0% no-repeat padding-box;
+  height: 208px;
+  background: #1767e5 0% 0% no-repeat;
   opacity: 0.1;
   display: flex;
 }
 
 .card_subs {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: -10vh;
+  margin-top: -5vh;
 }
 
 #cardSubscribe {
@@ -34,6 +37,7 @@
     width: 70%;
   }
 }
+
 
 .mat-card {
   background: transparent linear-gradient(89deg, #397ae1 0%, #addbef 100%) 0% 0 no-repeat padding-box;

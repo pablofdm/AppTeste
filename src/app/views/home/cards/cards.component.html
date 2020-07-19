@@ -1,9 +1,8 @@
+<div class="containers">
 <div class="cardcontainer">
   <span class="grid grid-template-columns-4">
-    <!-- Estava utilizando o ngFor de maneira incorreta -->
     <div class="item" *ngFor="let card of cards">
       <mat-card class="example-card" fxFlex.lt-sm="100%">
-        <!-- Adicionei a cor dinamica de acordo com o valor que esta em cada card, vindo do ngFor -->
         <h2 id="title1" [ngStyle]="{'color': card.color}">{{card.title}}</h2>
         <mat-card-content>
           <p>
@@ -11,9 +10,10 @@
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button id="btfundo1" mat-stroked-button>SAIBA MAIS</button>
+          <button id="btfundo1" [ngStyle]="{'color': card.color}" mat-stroked-button>SAIBA MAIS</button>
         </mat-card-actions>
       </mat-card>
     </div>
   </span>
+</div>
 </div>

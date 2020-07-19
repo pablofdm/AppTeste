@@ -24,9 +24,6 @@ export class CardsComponent implements OnInit {
 
   listar() {
     this.CardService.listar().subscribe(dados => {
-      // Estava recebendo this.card = dados, mas na verdade dentro do dados tinha os products
-      // seria possivel fazer com desestruturacao tbm, mas teria que adicionar tipage no metodo listar()
-      // exemplo de desestruturacao .subscribe({products} => this.dados = products)
       this.cards = dados.products
       console.log(this.cards)
     })
