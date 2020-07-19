@@ -3,9 +3,9 @@
 }
 
 .footer {
-  height: 6vh;
+  height: 100%;
   width: 100%;
-  min-height: 200px;
+  min-height: 250px;
   display: block;
 }
 
@@ -95,7 +95,10 @@ img {
 @media screen and (max-width: 768px) {
   .grid {
     display: block;
-    text-align: center;
+    height: 100%;
+  }
+  .item1 {
+    float: none;
   }
   .footer,
   .grid .grid-template-columns-3 {
