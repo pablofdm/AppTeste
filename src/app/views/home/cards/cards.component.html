@@ -1,19 +1,25 @@
 <div class="containers">
-<div class="cardcontainer">
-  <span class="grid grid-template-columns-4">
-    <div class="item" *ngFor="let card of cards">
-      <mat-card class="example-card" fxFlex.lt-sm="100%">
-        <h2 id="title1" [ngStyle]="{'color': card.color}">{{card.title}}</h2>
-        <mat-card-content>
-          <p>
-            {{card.text}}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button id="btfundo1" [ngStyle]="{'color': card.color}" mat-stroked-button>SAIBA MAIS</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </span>
-</div>
+  <div class="cardcontainer">
+    <span class="grid grid-template-columns-4">
+      <div class="item" *ngFor="let card of cards">
+        <mat-card class="example-card" fxFlex.lt-sm="100%">
+          <h2 id="title1" [ngStyle]="{ color: card.color }">
+            {{ card.title }}
+          </h2>
+          <mat-card-content>
+            <p>
+              {{ card.text }}
+            </p>
+            <button
+              id="btfundo1"
+              [ngStyle]="{ color: card.color }"
+              mat-stroked-button
+            >
+              SAIBA MAIS
+            </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </span>
+  </div>
 </div>

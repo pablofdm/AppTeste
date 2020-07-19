@@ -6,7 +6,7 @@
   height: 6vh;
   width: 100%;
   min-height: 200px;
-  justify-content: space-between;
+  display: block;
 }
 
 .grid-template-columns-3 {
@@ -17,7 +17,6 @@
   display: grid;
   margin: 0 auto;
   z-index: 5;
-  position: relative;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -55,6 +54,10 @@
   display: inline-flex;
 }
 
+.item4 {
+  margin-bottom: 20px;
+}
+
 i {
   color: white;
 }
@@ -78,6 +81,12 @@ img {
   .item1 {
     float: none;
   }
+
+  .footer,
+  .grid .grid-template-columns-3 {
+    text-align: center;
+    grid-template-columns: repeat(auto-fit(1fr));
+  }
   .item3,
   label {
     display: block;
@@ -91,11 +100,9 @@ img {
   .footer,
   .grid .grid-template-columns-3 {
     text-align: center;
+    grid-template-columns: repeat(auto-fit(1fr));
   }
 
-  .item1 {
-    float: none;
-  }
   .item3,
   label {
     display: block;

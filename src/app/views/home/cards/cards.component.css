@@ -2,16 +2,16 @@
   box-sizing: border-box;
 }
 
-.containers{
+.containers {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 .cardcontainer {
-  display: flex;
-  z-index: 5;
   position: absolute;
+  display: contents;
+  z-index: 5;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -19,49 +19,26 @@
   align-items: center;
 }
 
-
-@media (min-width: 1150px) {
-  .cardcontainer {
-    max-width: 1150px;
-  }
-}
-
 .grid {
   display: grid;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 600px) {
-  .grid,
-  .item,
-  .example-card {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  .grid,
-  .item,
-  .example-card {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-  
 }
 
 .grid-template-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: -40vh;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-auto-flow: row dense;
+  grid-gap: 25px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: -35vh;
+  z-index: 9999;
+  box-sizing: border-box;
+  width: 80%;
 }
 
 .item {
   text-align: center;
   font-size: 1.5em;
+  box-sizing: content-box;
 }
 
 body {
@@ -79,8 +56,8 @@ body > div:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.03);
 }
 
-p{
-  font-size: 0.8em;
+p {
+  font-size: 0.7em;
 }
 
 /*CARD CONTAINER*/
@@ -89,10 +66,16 @@ p{
 
 .mat-card {
   text-align: center;
+  box-sizing: content-box;
+  line-height: normal;
   margin-left: 5px;
   margin-right: 5px;
+  height: 220px;
+}
+
+.mat-card-content,
+.mat-card-content {
   box-sizing: border-box;
-  line-height: normal;
 }
 
 .mat-card:hover {
@@ -105,22 +88,11 @@ p{
 }
 
 .example-card {
-  max-width: max-content;
   text-align: center;
 }
 
 #btfundo1 {
-  color: #f11516;
   font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#btfundo2 {
-  color: #878787;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #btfundo3 {
@@ -137,24 +109,40 @@ p{
   padding-right: 10px;
 }
 
-#title1 {
-  color: #f11516;
+#title1,
+#title2,
+#title3,
+#title5 {
   font-weight: bold;
 }
 
-#title2 {
-  color: #1767e5;
-  font-weight: bold;
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) {
+  .grid,
+  .item {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }
 
-#title3 {
-  color: #6b41e9;
-  font-weight: bold;
+@media screen and (max-width: 768px) {
+  .grid,
+  .item {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .mat-card {
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }
-
-#title4 {
-  color: #35db93;
-  font-weight: bold;
-}
-
-
